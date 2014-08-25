@@ -1,0 +1,3 @@
+#!/bin/sh
+echo "human    ALL=(ALL:ALL) ALL" >> /etc/sudoers
+

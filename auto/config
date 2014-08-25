@@ -1,0 +1,15 @@
+#!/bin/sh
+
+set -e
+
+lb config noauto --bootappend-live "boot=live config \
+hostname=computer \
+username=human \
+debconf-preseed=filesystem \
+persistent=cryptsetup \
+persistence-encryption=luks \
+persistence" \
+--apt-http-proxy http://127.0.0.1:8118/ \
+--archive-areas "main contrib non-free" \
+--apt-recommends true \
+	"${@}"

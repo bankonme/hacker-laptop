@@ -1,0 +1,5 @@
+#!/bin/sh
+
+/usr/sbin/service ufw restart
+/usr/sbin/ufw enable
+
