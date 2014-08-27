@@ -9,7 +9,23 @@ debconf-preseed=filesystem \
 persistent=cryptsetup \
 persistence-encryption=luks \
 persistence" \
+--architecture amd64 \
+--apt-recommends false \
+--packages-lists="standard" \
+--tasks="standard" \
+--syslinux-menu vesamenu \
+--syslinux-splash data/splash.png \
+--syslinux-timeout 10 \
+--initramfs=live-boot \
+--backports false \
+--binary-images iso \
+--binary-indices false \
+--checksums none \
 --apt-http-proxy http://127.0.0.1:8118/ \
 --archive-areas "main contrib non-free" \
+--iso-application="Paranoid Hacker Live System" \
+--iso-publisher="https://github.com/david415/" \
+--iso-volume="PHLS 0.0.1" \
 --apt-recommends true \
+--memtest none \
 	"${@}"

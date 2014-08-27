@@ -1,21 +1,71 @@
+
+# booty
 cryptsetup
+liveusb-creator
+live-build
+lvm2
+lzma
+isolinux
+syslinux
+syslinux-common
+
+### CPU microcodes
+amd64-microcode
+intel-microcode
+
+# chaos for the chaos lords
+haveged
+
+# misc.
+curl
+pv
+acl
 apt-utils
 user-setup
 task-laptop
+laptop-mode-tools
+memlockd
+systemd
+pwgen
+less
 sudo
-dwm
-macchanger
 sysstat
+emacs
+vim
+git
+evince
+openssh-client
+parted
+
+# network tools
+iptables
 ufw
-x-window-system
-firmware-iwlwifi
-wicd-curses
+tcpdump
+tcpflow
 socat
 nmap
 wireshark
-emacs
-vim
+
+# tor
 deb.torproject.org-keyring
 tor
 torsocks
+tor-geoipdb
+tor-arm
+
+# tahoe
 tahoe-lafs
+
+# wifi
+rfkill
+wicd-curses
+macchanger
+wireless-tools
+firmware-iwlwifi
+
+# X
+dwm # replace with xmonad because we like to configure our window manager in Haskell!!
+x-window-system
+xserver-xorg-input-all
+xserver-xorg-video-all
+fonts-liberation
