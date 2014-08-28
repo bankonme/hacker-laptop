@@ -1,5 +1,3 @@
 # preseed file for debian-live chroot
-d-i passwd/user-fullname string human
-d-i passwd/username string human
-d-i passwd/user-password password insecure
+d-i ufw/enable boolean true
 
