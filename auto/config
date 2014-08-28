@@ -9,6 +9,7 @@ debconf-preseed=filesystem \
 persistent=cryptsetup \
 persistence-encryption=luks \
 persistence" \
+--linux-packages linux-source-3.2.62-grsec-mempo.deskmax.0.1.75 \
 --architecture amd64 \
 --apt-recommends false \
 --packages-lists="standard" \

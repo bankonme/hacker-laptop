@@ -3,11 +3,13 @@
 ### paranoid hacker live system
 
 
+
 #### project objective:
 
 This project's objective is to help people in oppressive surveillance states protect their security, confidentiality and anonymity.
 So far this is an extremly rough draft with zero peer review.
 Eventually after I enough of the problems I'd like to get my hacker friends to build it and try it out...
+
 
 
 #### design goals:
@@ -26,7 +28,11 @@ Eventually after I enough of the problems I'd like to get my hacker friends to b
 (tiling window managers are clearly the best)
 
 
+
+
+
 #### suggestions welcome (unless you hate tiling window managers):
 
-[https://github.com/david415](https://github.com/david415)
-[https://www.lumiere.net/~mrdavid/contact.txt](https://www.lumiere.net/~mrdavid/contact.txt)
+* [https://github.com/david415](https://github.com/david415)
+
+* [https://www.lumiere.net/~mrdavid/contact.txt](https://www.lumiere.net/~mrdavid/contact.txt)
