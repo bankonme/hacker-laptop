@@ -13,7 +13,7 @@ syslinux-common
 amd64-microcode
 intel-microcode
 
-# chaos for the chaos lords
+# hail eris goddess of chaos
 haveged
 
 # misc.
