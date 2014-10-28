@@ -1,0 +1,5 @@
+SocksPort 9050
+ControlPort 9051
+DNSPort 53
+HiddenServiceDir /var/lib/tor/services/ssh
+HiddenServicePort 22 127.0.0.1:22

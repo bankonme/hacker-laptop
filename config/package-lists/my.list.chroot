@@ -2,7 +2,7 @@
 # booty
 #cryptsetup
 #liveusb-creator
-live-build
+#live-build
 lvm2
 lzma
 #isolinux
@@ -24,21 +24,18 @@ user-setup
 #task-laptop
 #laptop-mode-tools
 passwd
-curl
+#curl
 pv
-acl
+#acl
 apt-utils
-memlockd
-systemd
+#memlockd
+#systemd
 pwgen
 less
 sudo
 sysstat
-#emacs
 vim
 git
-#evince
-parted
 
 # network tools
 iptables
@@ -46,8 +43,8 @@ ufw
 tcpdump
 tcpflow
 socat
-nmap
-#wireshark
+
+
 
 # tor
 deb.torproject.org-keyring
@@ -61,15 +58,6 @@ tahoe-lafs
 
 # wifi
 rfkill
-wicd-curses
+#wicd-curses
 macchanger
 
-#wireless-tools
-#firmware-iwlwifi
-
-# X
-#dwm # replace with xmonad because we like to configure our window manager in Haskell!!
-#x-window-system
-#xserver-xorg-input-all
-#xserver-xorg-video-all
-#fonts-liberation
