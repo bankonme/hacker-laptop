@@ -4,12 +4,11 @@ set -e
 
 lb config noauto --bootappend-live "boot=live config \
 hostname=computer \
-username=human \
 debconf-preseed=filesystem \
 persistent=cryptsetup \
 persistence-encryption=luks \
 persistence" \
---linux-packages linux-source-3.2.62-grsec-mempo.deskmax.0.1.75 \
+--linux-packages linux-image \
 --architecture amd64 \
 --apt-recommends false \
 --packages-lists="standard" \

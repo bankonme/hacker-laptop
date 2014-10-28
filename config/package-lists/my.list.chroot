@@ -17,13 +17,17 @@ intel-microcode
 haveged
 
 # misc.
+task-ssh-server
+openssh-client
+#openssh-server
+user-setup
+task-laptop
+laptop-mode-tools
+passwd
 curl
 pv
 acl
 apt-utils
-user-setup
-task-laptop
-laptop-mode-tools
 memlockd
 systemd
 pwgen
@@ -34,7 +38,6 @@ emacs
 vim
 git
 evince
-openssh-client
 parted
 
 # network tools
@@ -60,12 +63,12 @@ tahoe-lafs
 rfkill
 wicd-curses
 macchanger
-wireless-tools
-firmware-iwlwifi
+#wireless-tools
+#firmware-iwlwifi
 
 # X
-dwm # replace with xmonad because we like to configure our window manager in Haskell!!
-x-window-system
-xserver-xorg-input-all
-xserver-xorg-video-all
-fonts-liberation
+#dwm # replace with xmonad because we like to configure our window manager in Haskell!!
+#x-window-system
+#xserver-xorg-input-all
+#xserver-xorg-video-all
+#fonts-liberation
