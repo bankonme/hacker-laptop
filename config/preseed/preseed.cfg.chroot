@@ -1,3 +1,0 @@
-# preseed file for debian-live chroot
-#d-i ufw/enable boolean true
-

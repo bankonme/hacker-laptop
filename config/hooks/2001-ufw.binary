@@ -1,5 +1,0 @@
-#!/bin/sh
-
-# restart ufw so that it receives it's new config
-/usr/sbin/service ufw restart
-
