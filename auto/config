@@ -1,0 +1,18 @@
+#!/bin/sh
+lb config noauto --bootappend-live "boot=live config \
+hostname=computer \
+username=human" \
+--architectures amd64 \
+--binary-images iso \
+--linux-packages linux-image \
+--initramfs=live-boot \
+--apt-http-proxy http://127.0.0.1:8118/ \
+--mirror-binary http://ftp.de.debian.org/debian/ \
+--mirror-binary-security http://ftp.de.debian.org/debian-security/ \
+--archive-areas "main contrib non-free" \
+--iso-application="Paranoid Hacker Live System" \
+--iso-publisher="https://github.com/david415/" \
+--iso-volume="PHLS 0.0.1" \
+--apt-recommends true \
+--memtest none \
+"${@}"
