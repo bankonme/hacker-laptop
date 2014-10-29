@@ -1,0 +1,4 @@
+Package: openssh-*
+Pin: release n=wheezy-backports
+Pin-Priority: 900
+

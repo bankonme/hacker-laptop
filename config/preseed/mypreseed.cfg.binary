@@ -1,26 +1,2 @@
 
-
-# d-i netcfg/choose_interface select auto
-d-i netcfg/choose_interface select eth0
-
-# Static network configuration IPv4.
-d-i netcfg/get_ipaddress string 192.168.2.12
-d-i netcfg/get_netmask string 255.255.255.0
-d-i netcfg/get_gateway string 192.168.2.1
-d-i netcfg/get_nameservers string 127.0.0.1
-d-i netcfg/confirm_static boolean true
-# end of network interfaces configuration
-d-i netcfg/hostname string computer
-# network config end.
-
-d-i passwd/root-login boolean false
-d-i passwd/make-user boolean true
-d-i passwd/username string human
-d-i passwd/user-password password insecure
-d-i user-setup/allow-password-weak boolean true
-d-i user-setup/password-weak boolean true
-##printf "Uphum1aengoo" | mkpasswd -s -m sha-512
-#d-i passwd/user-password-crypted password $6$lkm1lY.H$fsZLE.7ahsZcHDlNixiZ2G3n.iX5yXd9Q/SLY6EW5FB09QxdKfXe7hDGmBed7hUyJHpZDbMCLn1n50Vn/sCfJ.
-
-d-i clock-setup/utc boolean true
-
+# empty for now

@@ -1,0 +1,5 @@
+#!/bin/sh
+
+chown -R human:human /home/human
+dpkg-reconfigure openssh-server
+

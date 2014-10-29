@@ -1,7 +1,13 @@
 #!/bin/sh
+
+#ip=192.168.2.12::192.168.2.1:255.255.255.0::eth0\
+
 lb config noauto --bootappend-live "boot=live config \
 hostname=computer \
-username=human" \
+username=human \
+user-default-groups=audio,cdrom,dip,floppy,video,plugdev,netdev,powerdev,scanner,bluetooth,fuse,ssh \
+noautologin \
+debug" \
 --architectures amd64 \
 --binary-images iso \
 --linux-packages linux-image \
