@@ -14,7 +14,7 @@ quickreboot \
 persistence \
 persistence-encryption=luks,none" \
 --architectures amd64 \
---binary-images iso \
+--binary-images iso-hybrid \
 --linux-packages linux-image \
 --initramfs=live-boot \
 --apt-http-proxy http://127.0.0.1:8118/ \
