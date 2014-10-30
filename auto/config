@@ -1,13 +1,18 @@
 #!/bin/sh
 
-#ip=192.168.2.12::192.168.2.1:255.255.255.0::eth0\
+# latest luks cryptos with 10 seceonds of PBKDF2 key stretching
+# cryptsetup --iter-time 10 --cipher aes-xts-plain64 luksFormat <device>
+
 
 lb config noauto --bootappend-live "boot=live config \
 hostname=computer \
 username=human \
-user-default-groups=audio,cdrom,dip,floppy,video,plugdev,netdev,powerdev,scanner,bluetooth,fuse,ssh \
+user-default-groups=audio,cdrom,dip,floppy,video,plugdev,netdev,powerdev,scanner,bluetooth,fuse \
 noautologin \
-debug" \
+debug=1 \
+quickreboot \
+persistence \
+persistence-encryption=luks,none" \
 --architectures amd64 \
 --binary-images iso \
 --linux-packages linux-image \
