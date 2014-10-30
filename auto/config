@@ -7,8 +7,8 @@ hostname=computer \
 username=human \
 user-default-groups=audio,cdrom,dip,floppy,video,plugdev,netdev,powerdev,scanner,bluetooth,fuse,ssh \
 noautologin \
-debug" \
---architectures amd64 \
+debug toram" \
+--architectures i386 \
 --binary-images iso \
 --linux-packages linux-image \
 --initramfs=live-boot \
