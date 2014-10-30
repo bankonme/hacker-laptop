@@ -2,3 +2,6 @@ Package: openssh-*
 Pin: release n=wheezy-backports
 Pin-Priority: 900
 
+Package: tlsdate
+Pin: release n=wheezy-backports
+Pin-Priority: 900

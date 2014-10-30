@@ -19,6 +19,6 @@ debug" \
 --iso-application="Paranoid Hacker Live System" \
 --iso-publisher="https://github.com/david415/" \
 --iso-volume="PHLS 0.0.1" \
---apt-recommends false \
+--apt-recommends true \
 --memtest none \
 "${@}"

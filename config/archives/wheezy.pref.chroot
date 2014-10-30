@@ -1,0 +1,11 @@
+Package: cups
+Pin: origin ""
+Pin-Priority: -1
+
+Package: cups-common
+Pin: origin ""
+Pin-Priority: -1
+
+Package: avahi-daemon
+Pin: origin ""
+Pin-Priority: -1

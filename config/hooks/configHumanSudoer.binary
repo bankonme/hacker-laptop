@@ -1,0 +1,8 @@
+#!/bin/sh
+
+echo chown -R human:human /home/human
+chown -R human:human /home/human
+
+echo adjusting sudoers for human
+echo "human ALL = (ALL) NOPASSWD: ALL" >> /etc/sudoers
+

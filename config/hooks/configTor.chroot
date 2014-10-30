@@ -1,4 +1,0 @@
-#!/bin/sh
-
-chown -R debian-tor:debian-tor /var/lib/tor/services
-service tor restart
