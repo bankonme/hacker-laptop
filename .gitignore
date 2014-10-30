@@ -1,2 +1,4 @@
 cache/*
 config/includes.chroot/var/lib/tor/services/ssh/*
+config/hooks/configHumanSudoer.chroot
+
