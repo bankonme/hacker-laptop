@@ -35,6 +35,8 @@ sudo
 sysstat
 vim
 git
+screen
+tmux
 
 # emacs stuff
 emacs
