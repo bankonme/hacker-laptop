@@ -34,13 +34,76 @@ means wiping your drives (and or smashing with a hammer into tiny peices) AFTER 
 
 - encrypted persistent volume (luks + ext4)
 
-- pre-installed with all the best crypto tools: *Tahoe-LAFS*, Pond, xmpp-client and gpg (not in the "best" category but still necessary).
+- pre-installed with all the best crypto tools: *Tahoe-LAFS*, Pond, xmpp-client and gpg (necessary for Pond introductions).
 
 - no user login prompt... only passphrase for crypto volume
 
 - if sudo access is desired then the user can change their password (change will not survive reboot)
 
 - dwm or xmonad only! (no shitty window managers like gnome or whatever the kids use thesedays)
+
+
+#### usage:
+
+This is my rough draft debian-live 3.x configuration.
+You should read the debian-live 3.x documentation to understand how it works and how to use it.
+It's pretty easy to use and customize to suite your needs.
+
+http://live.debian.net/manual/3.x/html/live-manual.en.html
+
+The build results in a `binary.hybrid.iso` file. Here's how I make a USB disk with an encrypted LUKS Persistent volume:
+
+
+##### write hybrid iso image to a USB disk
+
+If for instance the USB disk is /dev/sdc:
+```bash
+dd if=binary.hybrid.iso of=/dev/sdc bs=1M
+```
+
+##### create another partition on the USB disk
+
+Then used gparted to create another partition with the label "persistence"...
+just like the debian-live 3.x documentation says to do. =-)
+
+```bash
+sudo gparted /dev/sdc
+```
+
+
+##### create the LUKS volume
+
+I think it's important to pay attention to the latest cipher format, encryption algorithms and key stretching:
+
+```bash
+cryptsetup --iter-time 10 --cipher aes-xts-plain64 --key-size 512 --hash sha512 luksFormat /dev/sdc
+```
+
+
+##### create the filesystem
+
+Just like the debian-live 3.x documentation states, you must label
+the filesystem with "persistence" :
+
+```bash
+# XXX prompts for passphrase, obviously
+cryptsetup luksOpen /dev/sdc myLuks
+
+mkfs -t ext4 -L persistence /dev/mapper/myLuks
+```
+
+
+##### place a persistence.conf onto the new filesystem
+
+```bash
+mount /dev/mapper/myLuks /mnt
+# XXX choose your own adventure
+cat <<EOT>/mnt/persistence.conf
+/home
+EOT
+umount /mnt
+cryptsetup luksClose myLuks
+```
 
 
 #### suggestions welcome
