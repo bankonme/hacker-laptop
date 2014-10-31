@@ -37,6 +37,7 @@ vim
 git
 screen
 tmux
+e2fsprogs
 
 # emacs stuff
 emacs
@@ -50,6 +51,7 @@ ufw
 tcpdump
 tcpflow
 socat
+netcat-openbsd
 wireshark
 
 # tor

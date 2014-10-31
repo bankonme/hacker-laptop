@@ -1,3 +1,7 @@
+Package: network-manager
+Pin: origin ""
+Pin-Priority: -1
+
 Package: cups
 Pin: origin ""
 Pin-Priority: -1
